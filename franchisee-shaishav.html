@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safal Shaishav Franchisee Inquiry</title>
+  <link rel="stylesheet" href="style.css"> <!-- global CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Banner */
+    .banner-box {
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .banner-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #004aad;
+      color: white;
+      border-radius: 20px;
+      max-width: 900px;
+      margin: -60px auto 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      position: relative;
+    }
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #ffd700;
+      font-weight: 500;
+    }
+
+    /* Home Button */
+    .home-btn {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #ffd700;
+      color: #004aad;
+      padding: 10px 14px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .home-btn:hover {
+      background: #ffb400;
+      transform: scale(1.1);
+    }
+
+    /* Section Box */
+    .section-box {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 850px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+    .section-box h2 {
+      color: #004aad;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .section-box ul {
+      list-style: "✔ ";
+      padding-left: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+    .section-box ul li {
+      margin: 10px 0;
+    }
+
+    /* Franchise Form */
+    .franchise-form {
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border: 2px solid #004aad;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+    .franchise-form h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .franchise-form input,
+    .franchise-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1.5px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .franchise-form input:focus,
+    .franchise-form textarea:focus {
+      outline: none;
+      border-color: #004aad;
+      background: #f0f6ff;
+    }
+    .franchise-form button {
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: block;
+      margin: auto;
+    }
+    .franchise-form button:hover {
+      background: #003080;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004aad;
+      color: white;
+      margin-top: 50px;
+      border-radius: 20px 20px 0 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner-box">
+    <img src="Shaishav.jpg" alt="Safal Shaishav Banner">
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <a href="index.html" class="home-btn">🏠</a>
+    <h2>Safal Shaishav Franchisee</h2>
+    <p>Be a part of spreading joyful learning with us!</p>
+  </div>
+
+  <!-- What We Provide -->
+  <div class="section-box">
+    <h2>What We Provide</h2>
+    <ul>
+      <li><a href="requirements-roles.html">Roles & Responsibilities</a></li>
+      <li><a href="requirements-marketing.html">Marketing</a></li>
+      <li><a href="requirements-sharing.html">% Sharing</a></li>
+      <li><a href="requirements-ramakada.html">Ramakada</a></li>
+      <li><a href="requirements-contract.html">Contract</a></li>
+      <li><a href="requirements-evalution.html">Regular Evaluation</a></li>
+    </ul>
+  </div>
+
+  <!-- Franchise Inquiry Form -->
+  <form class="franchise-form">
+    <h2>Franchise Inquiry Form</h2>
+    <input type="text" placeholder="Your Name & Other Details" required>
+    <textarea placeholder="Tell us more about yourself..." rows="5"></textarea>
+    <button type="submit">Submit Inquiry</button>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <p>Sector - 21 | 📞 +91 81289 10461 | ✉ <a href="mailto:sharad.darji@edusafal.com">sharad.darji@edusafal.com</a></p>
+    <p>© 2025 Safal Shaishav | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

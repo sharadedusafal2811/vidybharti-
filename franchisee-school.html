@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safal School</title>
+  <link rel="stylesheet" href="style.css"> <!-- link your main CSS -->
+  <style>
+    :root {
+      --primary: #004aad;
+      --accent1: #ff9800;
+      --accent2: #e91e63;
+      --accent3: #3f51b5;
+      --light: #fffaf3;
+      --dark: #333;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    /* Banner */
+    .banner-box {
+      width: 900px;
+      height: 680x;
+      overflow: hidden;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .banner-box img {
+      width: 505;
+      height: 50%;
+      object-fit: cover;
+    }
+
+    /* Rainbow heading */
+    .rainbow-animate {
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 100%;
+      animation: rainbowMove 6s linear infinite;
+    }
+    @keyframes rainbowMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--primary);
+      color: white;
+      border-radius: 20px;
+      max-width: 900px;
+      margin: -60px auto 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      position: relative;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #ffd700;
+    }
+
+    /* Home Button */
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: var(--accent2);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .home-btn:hover {
+      background: var(--accent3);
+      transform: scale(1.1);
+    }
+
+    /* What We Provide Box */
+    .provide-box {
+      background: var(--light);
+      border: 3px dashed var(--accent1);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 800px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+    .provide-box h2 {
+      font-family: 'Fredoka One', cursive;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .provide-box ul {
+      list-style: "✨ ";
+      padding-left: 20px;
+      font-size: 18px;
+      color: var(--dark);
+    }
+    .provide-box ul li {
+      margin: 10px 0;
+    }
+
+    /* Admission Form */
+    .franchise-form {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border: 3px solid var(--accent2);
+      border-radius: 20px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+    .franchise-form h2 {
+      text-align: center;
+      font-family: 'Fredoka One', cursive;
+      color: var(--accent2);
+      margin-bottom: 20px;
+    }
+    .franchise-form input,
+    .franchise-form textarea,
+    .franchise-form select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 2px solid var(--accent1);
+      border-radius: 12px;
+      font-size: 16px;
+    }
+    .franchise-form button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: block;
+      margin: auto;
+    }
+    .franchise-form button:hover {
+      background: var(--accent3);
+      transform: scale(1.08);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary);
+      color: white;
+      margin-top: 50px;
+      border-radius: 20px 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner-box">
+    <img src="images/school.jpg" alt="Safal School Banner">
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <a href="index.html" class="home-btn">🏠</a>
+    <h2 class="rainbow-animate">Safal School</h2>
+    <p>Unique Way of Learning – A joyful place for education!</p>
+  </div>
+
+  <!-- What We Provide -->
+  <div class="provide-box">
+    <h2>What We Provide</h2>
+    <ul>
+      <li>Child-centered learning</li>
+      <li>Activity-based curriculum</li>
+      <li>Modern facilities & digital learning</li>
+      <li>Sports & extracurricular activities</li>
+      <li>Regular evaluation & parent interaction</li>
+    </ul>
+  </div>
+
+  <!-- Franchise Inquiry Form -->
+  <form class="franchise-form">
+    <h2>Franchise Inquiry Form</h2>
+    <input type="text" placeholder="Full Name / Organization Name" required>
+    <input type="tel" placeholder="Contact Number" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="City" required>
+    <input type="text" placeholder="State" required>
+    <select required>
+      <option value="">Do you have experience in education?</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+    <select required>
+      <option value="">Approximate Investment Capacity</option>
+      <option value="5-10">₹5 - 10 Lakhs</option>
+      <option value="10-20">₹10 - 20 Lakhs</option>
+      <option value="20+">₹20 Lakhs and above</option>
+    </select>
+    <textarea placeholder="Do you already own land/building? Please specify details..." rows="4"></textarea>
+    <select required>
+      <option value="">Preferred Partnership Type</option>
+      <option value="single">Single Owner</option>
+      <option value="partnership">Partnership Firm</option>
+      <option value="company">Company / Trust</option>
+    </select>
+    <input type="text" placeholder="Expected % Sharing (e.g., 60:40)" required>
+    <textarea placeholder="Why do you want to start a Safal School Franchise?" rows="4" required></textarea>
+    <button type="submit">Submit Franchise Request</button>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Safal School | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

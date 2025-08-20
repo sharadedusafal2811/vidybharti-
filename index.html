@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidyabharti - Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo" onclick="location.href='index.html'">
+      <img src="images/vidyabharti image.jpg" alt="Vidyabharti Logo" />
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="javascript:void(0)">Franchisee Inquiry ▼</a>
+        <ul>
+          <li><a href="franchisee-shaishav.html">Safal Shaishav</a></li>
+          <li><a href="franchisee-school.html">Safal School</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Affiliation ▼</a>
+        <ul>
+          <li><a href="affiliation-shaishav.html">Safal Shaishav</a></li>
+          <li><a href="affiliation-school.html">Safal School</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<script>
+  // Select all menu items that have submenus
+  document.querySelectorAll("nav ul li > a").forEach(link => {
+    link.addEventListener("click", function(e) {
+      const submenu = this.nextElementSibling;
+
+      // If the clicked item has a submenu
+      if (submenu && submenu.tagName === "UL") {
+        e.preventDefault(); // stop normal link action
+
+        // Close other open menus
+        document.querySelectorAll("nav ul li ul").forEach(ul => {
+          if (ul !== submenu) ul.style.display = "none";
+        });
+
+        // Toggle current submenu
+        submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+      }
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener("click", function(e) {
+    if (!e.target.closest("nav")) {
+      document.querySelectorAll("nav ul li ul").forEach(ul => ul.style.display = "none");
+    }
+  });
+</script>
+
+
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Welcome to Vidyabharti</h2>
+    <p>Learning with Joy & Fun!</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>About Vidyabharti</h2>
+    <p>
+      Vidyabharti is dedicated to providing high-quality education with strong teacher training, national recognition, 
+      and a proven franchise model. Our mission is to empower young learners with knowledge, values, and skills 
+      that prepare them for a successful future.
+    </p>
+  </div>
+
+  <!-- Why Choose -->
+  <div class="section">
+    <h2>Why Choose Vidyabharti?</h2>
+    <ul>
+      <li>Quality Education with modern learning techniques</li>
+      <li>Strong Teacher Training programs</li>
+      <li>National Recognition & trusted reputation</li>
+      <li>Proven Franchise Model for success</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Sector - 21 | 📞 +91 81289 10461 | ✉ 
+      <a href="mailto:sharad.darji@edusafal.com">sharad.darji@edusafal.com</a>
+    </p>
+    <p>© 2025 Vidyabharti | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
